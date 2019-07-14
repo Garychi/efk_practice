@@ -1,2 +1,2 @@
-# efk_practice
-EFK Practice
+# EFK Practice
+Elasticsearch + Fluentd Fluentd-ui + Kibana
