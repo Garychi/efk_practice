@@ -31,6 +31,7 @@ docker restart elasticsearch
 - logstash_system
 - beats_system
 - remote_monitoring_user
+
 docker exec -it elasticsearch ./bin/elasticsearch-setup-passwords interactive
 docker restart elasticsearch
 
