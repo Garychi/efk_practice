@@ -17,14 +17,14 @@ build environment : docker-compose up -d
 
 # Security Setting
 
-#### Step1 Modify config elasticsearch.yml
+#### Step1. Modify config elasticsearch.yml
 docker exec -it elasticsearch vi /usr/share/elasticsearch/config/elasticsearch.yml
 - xpack.security.enabled: true
 
 docker restart elasticsearch
 
 
-#### Step2 Initial default password
+#### Step2. Initial default password
 - elastic
 - kibana
 - apm_system
@@ -34,7 +34,7 @@ docker restart elasticsearch
 docker exec -it elasticsearch ./bin/elasticsearch-setup-passwords interactive
 docker restart elasticsearch
 
-#### Step3 Add kibana password from Step2 default password 
+#### Step3. Add kibana password from Step2
 docker exec -it kibana vi /usr/share/kibana/config/kibana.yml
 - elasticsearch.username: "kibana"
 - elasticsearch.password: "your_password"
