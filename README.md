@@ -33,6 +33,7 @@ docker restart elasticsearch
 - remote_monitoring_user
 
 docker exec -it elasticsearch ./bin/elasticsearch-setup-passwords interactive
+
 docker restart elasticsearch
 
 #### Step3. Add kibana password from Step2
