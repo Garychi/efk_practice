@@ -15,7 +15,7 @@ build environment : docker-compose up -d
 - password : changeme
 
 
-# Security Setting
+# Security Setting (Optional)
 #### Setp1. Open Kibana dashboard -> Management -> License Management -> Start Trial
 
 #### Step2. Modify config elasticsearch.yml
